@@ -1,0 +1,199 @@
+:root {
+    --base: #0c3c60;
+    --action: red;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    transition: 0.5s all
+}
+p, ul li, ol li{
+    line-height: 2em;
+    text-align: justify;
+}
+p.baseBG{
+    color: var(--base);
+}
+a, button{
+    outline: none;
+}
+a, a:hover{
+    text-decoration: none;
+}
+div.baseBG{
+    background: var(--base);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+div.baseBG p, div.baseBG h3{
+    margin: 0
+}
+div.baseBG h3{
+    font-size: 20px;
+}
+div.baseBG p{
+    font-size: 16px;
+}
+ul li, ol li{
+    list-style: none;
+}
+img{
+    width: 100%;
+    height: auto
+}
+.logo{
+    max-width: 90px;
+}
+.navbar{
+    background: #fdead6;
+    padding: 0 2em;
+    display: flex;
+    align-items: center;
+    transition: 0.5s all;
+}
+.navbar a{
+    color: #000;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 10px 1em
+}
+.header div{
+    padding: 2em 0;
+    text-align: center;
+}
+.header div h2{
+    color: var(--base);
+}
+.header div h3{
+    color: var(--base);
+    font-family: 'Raleway', sans-serif;
+}
+.ban-fix{
+    /* background-color: var(--base); */
+    transition: 1s all;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+.amitBtn{
+    background: var(--base);
+    color: #fff;
+    border: none;
+    padding: 5px 1em;
+    border-radius: 2px;
+    margin: 1em auto;
+    min-width: 150px;
+}
+.page h2{
+    text-align: center;
+    font-size: 4em;
+    color: var(--base);
+    margin: 1em 0 0.5em;
+}
+footer h2{
+    text-align: center;
+    font-size: 4em;
+    color: #fff;
+}
+.services .col-sm-4 div{
+    background: var(--base);
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    height: 350px;
+}
+.services .amitBtn{
+    background: #6ea4ca;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 150px;
+}
+footer{
+    background: var(--base);
+    color: #fff;
+}
+footer .container{
+    padding-top: 4em;
+    padding-bottom: 1em;
+}
+footer label{
+    color: #fff;
+    margin: 10px 0 0;
+}
+footer .amitBtn{
+    background: #6ea4ca;
+}
+.akk p{
+    text-align: center;
+    margin: 0;
+}
+.akk p a{
+    color: #fff;
+}
+.akk p a:hover{
+    color: red;
+}
+.founder{
+    background: var(--base);
+    color: #fff;
+    padding: 5px 10px;
+    margin-bottom: 1em;
+}
+.founder h3{
+    margin: 5px 0 0;
+}
+.founder p{
+    margin: 0;
+}
+.services .col-sm-6 div, .services .col-sm-12 div{
+    background: var(--base);
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    min-height: 300px;
+    margin: 1em;
+}
+.allsf{
+    display: flex;
+    align-items: center;
+}
+.projects .row{
+    align-items: center;
+    justify-content: center;
+}
+.clients .col-sm-4{
+    padding: 2em;
+}
+.clients img{
+    max-width: 150px;
+    /* margin: 1em; */
+}
+.nav-pills{
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+}
+.nav-pills li a{
+    background-color: var(--base);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.nav-pills li a.active{
+    background: red;
+}
+.services .col-sm-4{
+    margin-bottom: 1em;
+}
+.services .col-sm-4 ul{
+    padding: 0
+}
+.clients img{
+    padding: 1em 1em 2em 1em;
+}
+.clients .col-sm-3 h4{
+    margin-bottom: 2em;
+}
