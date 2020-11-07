@@ -6,6 +6,9 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
     transition: 0.5s all
 }
+ul{
+    padding: 0
+}
 p, ul li, ol li{
     line-height: 2em;
     text-align: justify;
@@ -25,8 +28,7 @@ div.baseBG{
     padding: 10px 20px;
     border-radius: 5px;
 }
-div.baseBG p, div.baseBG h3{
-    margin: 0
+div.baseBG p, div.baseBG h3{margin: 0
 }
 div.baseBG h3{
     font-size: 20px;
@@ -196,4 +198,10 @@ footer .amitBtn{
 }
 .clients .col-sm-3 h4{
     margin-bottom: 2em;
+}
+.discStyle{
+    padding-left: 2em;
+}
+.discStyle li{
+    list-style: disc;
 }

@@ -1,0 +1,303 @@
+$base:      #2a3990;
+$gradLight: #f6874d;
+$gradDark: #c3224f;
+$text:      #535353;
+$yellow:       #ffce52;
+$blue:      #2a3990;
+a:hover{
+    text-decoration: none;
+}
+header{
+    background-color: $base;
+}
+.topBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 2em;
+}
+.navbar{
+    // background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABkcAAABfCAMAAABlXuCYAAAAM1BMVEUAAADm5ubs7Oz////j4+Pl5eXm5ubn5+fs7Ozk5OTs7Ozr6+v////j4+P9/f3v7+/p6els070OAAAADHRSTlMAxgoB1akUtZfdixrqqZS3AAABzUlEQVR42uzVMRHAMAADsQBo+NMthb9MHiQSOhcA3p37AcArjwDgEQAijwAwxSMAeASAyCMATPEIAB4BIPIIAFM8AoBHAIg8AsAUjwDgEQAijwAwxSMAeASAyCMATPEIAB4BIPIIAFM8AoBHAIg8AsAUjwDgEQAijwAwxSMAeASAyCMATPEIAB4BIPIIAFM8AoBHAIg8AsDPXh2jIBDFUAB8IKIsRrz/aW0tY36TYuYSs4pHAPAIAE0eAWAVjwDgEQCaPALAKh4BwCMANHkEgFU8AoBHAGjyCACreAQAjwDQ5BEAVvEIAB4BoMkjAKziEQA8AkCTRwBYxSMAHD7yfgHAUOUSCQBjlVwfkQAwVBEJAGeP5CkSAGYqIgFgriISAOYqIgHg/JHcRQLAwSM3kQAweUQkAMxVRALAXEUkAMxVftweIgHgLxWRADBXEQnAt716SyEAAIAAuB4psXH/0/qVEu33zCWGXSMSAHbNh9PheQeA9ZEcD487APynEQkAu0YkAOwakQCwa0QCwK4RCQC7RiQA7BqRALBrRALArvnqeBYJAPsjuYgEgB8akQCwa0QCwK4RCQC75kckV5EAsD+Sm0gAGB55i6QA8M0L7xHohYpYzI4AAAAASUVORK5CYII=);
+    background-color: #fff;
+    background-size: 100% 100%;
+    padding: 3px 0 0;
+    min-height: 70px;
+    // margin: 0 4em;
+    padding: 0 1em;
+}
+.registerBtn{
+    // background: linear-gradient(45deg,$gradLight 0%,$gradDark 100%);
+    background: $yellow;
+    padding: 15px 40px;
+    color: #000 !important;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600 !important;
+    margin: 10px 0;
+    font-size: 15px !important;
+    box-shadow: 0px 0px 5px #f1575194;
+    transition: all .5s ease;
+    text-align: center;
+    font-weight: 500;
+}
+.registerBtn:hover{
+    border-radius: 50px;
+    // background: linear-gradient(45deg,rgba(255,125,57,1) 0%,rgba(255,22,86,1) 100%);
+    transition: all .5s ease;
+}
+.navbar .nav-link{
+    color: $text;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.left-panel {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    max-width: 400px;
+}
+// .banner .row{
+//     max-width: 80%;
+//     margin-right: auto;
+//     margin-left: auto;
+// }
+// .main-title-container {
+//     background: url("../images/title-section.png") repeat 0 0;
+//     background-size: contain;
+//     width: 680px;
+//     height: 600px;
+//     padding: 6rem 4rem 10rem 13rem;
+//     background-repeat: no-repeat;
+//     text-align: center;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-evenly;
+//     flex-direction: column;
+// }
+.main-title-container img{
+    max-width: 250px;
+}
+.section1-right{
+    float: right;
+    padding: 50px 0 50px 50px;
+    margin-top: 7rem;
+}
+.container{
+    max-width: 80%;
+    width: 80%
+}
+.section1-right .registerBtn{
+    display: block;
+    margin-top: 4em;
+}
+.main-title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #000;
+}
+div.sub-title {
+    font-weight: 300;
+    font-size: 32px;
+    color: #484848;
+    margin-bottom: 35px;
+}
+.numbers{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.numbers .value, .numbers .plus{
+    color: $blue;
+    font-size: 2em;
+}
+.numbers h6{
+    padding: 1em 0;
+    font-size: 24px;
+    color: $text;
+    font-weight: 300;
+}
+#accordion .card button{
+    width: 100%;
+    text-align: left;
+    text-decoration: none;
+    color: $text;
+}
+#accordion button:not(.collapsed) {
+    color: #fff;
+    background: $blue;
+}
+#accordion button {
+    background: 0 0;
+    width: 100%;
+    text-align: left;
+    transition: .5s all;
+}
+#accordion button h5{
+    font-size: 16px;
+}
+footer {
+    // background: url("../images/footer.png");
+    background: $blue;
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+    font-size: 18px;
+    padding: 4em 0 2em 0;
+}
+footer form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em 0;
+}
+footer input{
+    padding: 5px 10px;
+    max-width: 250px;
+    border-radius: 0 !important;
+    border: none;
+}
+footer button{
+    border: none;
+    padding: 5px 1em;
+    background: $gradLight;
+    color: #fff;
+}
+.copy{
+    color: #ffffff;
+    margin: 2em 0
+}
+.regsitrationForm label{
+    display: block;
+    font-weight: 500;
+    margin: 0.5em 0 0;
+}
+.amitBtn{
+    background: $blue;
+    color: #fff;
+    margin: 1em auto;
+    border: none;
+    padding: 5px 2em;
+    border-radius: 5px;
+    width: 100%;
+}
+.my-btn{
+    text-align: center;
+}
+.details{
+    // margin: 5em 0 2em;
+    // background: linear-gradient(45deg, #ff7d39 0%, #ff1656 100%);
+    background: $blue;
+    padding: 3em 0;
+    color: #fff;
+    line-height: 2em;
+}
+.details h2{
+    font-size: 2em;
+    margin-bottom: 1.5em;
+}
+.details p{
+    font-size: 17px;
+}
+.awards h3{
+    background: $blue;
+    padding: 5px 1em;
+    color: #fff;
+    font-size: 17px;
+}
+.awards div{
+    margin-bottom: 2em;
+}
+.special {
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    left: 41%;
+    width: 800px;
+}
+.tbhLogo{
+    max-height: 80px;
+    width: auto;;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 3.5rem;
+}
+.banner iframe{
+    width: 100%;
+    height: 100%;
+}
+.flex-h{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about{
+    padding: 2em 0;
+    background: $blue;
+    color: #fff;
+}
+.stats{
+    margin: 4em 0
+}
+.stats h2{
+    text-align: center;
+}
+.whyus .row{
+    background: $blue;
+    color: #fff;
+}
+.whyus .col-sm-4{
+    padding: 2em 1em;
+    border: 2px solid #fff;
+}
+.whyus p{
+    line-height: 2em;
+}
+.whyus h2{
+    text-align: center;
+    margin-bottom: 2em;
+}
+.whoto{
+    margin: 4em 0;
+}
+.whoto li{
+    font-size: 16px;
+    text-align: center;
+    list-style: none;
+    margin: 2em 0;
+}
+h2.regsiterNow{
+    background: $yellow;
+    color: #000;
+    padding: 1em 0;
+    font-size: 3em;
+}
+.payment img{
+    max-width: 250px;
+}
+.payment p{
+    font-size: 18px;
+}
+.icons img{
+    margin: 0 1em;
+}
+.composite{
+    max-width: 700px;
+    margin-bottom: 3em;
+}
+.contact{
+    color: #fff;
+}
+.contact h2{
+    margin: 2em 0 1em 0;
+}
+.whatsButton {
+    right: 0;
+}
+.callButton, .whatsButton {
+    position: fixed;
+    bottom: 5%;
+    width: 50px;
+    margin: 1em;
+    z-index: 100;
+}

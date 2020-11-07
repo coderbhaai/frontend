@@ -1,5 +1,5 @@
 <?php include('head.php'); ?>
-<section class="page">
+<!-- <section class="page">
     <div class="container">
         <h2>Financing</h2>
         <div class="row">
@@ -10,20 +10,39 @@
             </div>
         </div>
     </div>
-</section>
-<section class="my-5">
+</section> -->
+<section class="page my-5">
     <div class="container">
+        <h2>Financing</h2>
         <div class="row">
             <div class="col-sm-12 mb-5">
-                <p>We are proud to cooperate with AIL Structured Finance Limited of Switzerland, to jointly advise and assist EPC Contractors for arranging finance for projects being implemented on an EPC + Finance basis in infrastructure, energy and industrial sectors around the world. Total Bid Solutions and AIL are jointly committed to advise and assist international EPC Contractors on choosing right geographies, projects and delivering cost effective and innovative financing solutions through an established network with financial institutions, ECAs and insurers around the world. </p>
+                <p>TBS provides:</p>
+                <h3>Investment banking for corporates - Debt</h3>
+                <ul class="discStyle">
+                    <li>Working Capital Arrangement</li>
+                    <li>Trade Finance Arrangement</li>
+                    <li>Project Debt / Long Term Debt Arrangement</li>
+                    <li>Debt Instrument Structuring</li>
+                    <li>Debt Syndication Service</li>
+                </ul>
+                <h3>Investment Banking for Corporates - Equity</h3>
+                <ul class="discStyle">
+                    <li>Private Equity Placement</li>
+                    <li>Structured Equity </li>
+                    <li>Merger/Acquisition Advisory</li>
+                    <li>Valuation Advisory</li>
+                </ul>
+                <h3>Investment Banking for Corporate/Bank/FI - Stressed Asset</h3>
+                <ul class="discStyle">
+                    <li>Finding new Investor/Buyer for Stressed Project Asset/Stressed Company and assisting the bank to resolve NPA/Stressed situation</li>
+                    <li>Assisting the bidder to bid or buy a stressed asset in the NCLT procedure or a Pre-NCLT phase </li>
+                </ul>
+                <h3>Sectoral Business Advisory</h3>
+                <ul class="discStyle">
+                    <li>Assisting corporates in Bid Participation for both Indian and MNC bids</li>
+                </ul>
             </div>
-            <div class="col-sm-4 allsf">
-                <img src="bundle/images/allsf.webp"/>
-            </div>
-            <div class="col-sm-8">
-                <p>AIL is an independent firm offering specialized advisory services related to the structuring and financing of exports for energy and infrastructure projects. With tailored financing solutions and the procurement of the required financing AIL finds the ideal financial structure combined with the optimal risk mitigation for projects. AIL structures and arranges financing solutions for companies that either wish to provide a financing package to their end-client in order to enhance the overall competitiveness of their offer or that are requested to provide a financing offer as per a tender process.</p><br/>
-                <p><a href="www.ailsf.ch" target="_blank">www.ailsf.ch</a></p>
-            </div>
+            
         </div>
     </div>
 </section>
