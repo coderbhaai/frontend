@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,100&family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #535353;
+}
+
+h1 h2 h3 h4 h5 h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  text-align: justify;
+  line-height: 2em;
+  color: #535353;
+}
+
+button, button:focus, input, input:focus {
+  outline: none;
+}
+
+button:hover, button:focus:hover, input:hover, input:focus:hover {
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.heading {
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+.subheading {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.mohitBtn {
+  background-color: #ea700c;
+  border: none;
+  padding: 1em 2em;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.container {
+  max-width: 80%;
+}
+
+.navbar {
+  padding: 0 2em;
+}
+
+nav {
+  background: #004260;
+}
+
+nav .logo {
+  max-width: 150px;
+}
+
+nav li a {
+  color: #fff;
+}
+
+nav li a:hover {
+  color: #fff;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20%;
+}
+
+.carousel-caption h1, .carousel-caption h2 {
+  font-size: 2em;
+  text-shadow: 0.3rem 0.3rem 0.3rem black;
+}
+
+.stats {
+  margin: 2em 0;
+}
+
+.stats .numbers .value, .stats .numbers .plus {
+  color: #004260;
+  font-size: 2em;
+}
+
+.stats h2 {
+  text-align: center;
+}
+
+.stats .numbers h6 {
+  font-size: 24px;
+  color: #535353;
+  font-weight: bold;
+  text-align: center;
+}
+
+.stats .numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.philo {
+  text-align: center;
+}
+
+.philo .col-sm-4 > div {
+  background-image: gradient(120deg, #19191d 0%, #22232b 70%, #2b2d38 100%);
+  -webkit-box-shadow: 4px 0px 7px 8px #ffc60040;
+          box-shadow: 4px 0px 7px 8px #ffc60040;
+  background-color: #fec708;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.philo img {
+  max-width: 150px;
+  margin-bottom: 2em;
+}
+
+.philo .content h4 {
+  text-align: center;
+  margin: 1em 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+}
+
+.philo .content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+}
+
+.experts .imgSocial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.experts .imgSocial .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.experts .imgSocial .user h4 {
+  font-size: 15px;
+}
+
+.experts .imgSocial .user img {
+  max-width: 120px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.experts .imgSocial img.social {
+  max-width: 30px;
+}
+
+.experts .expert-box {
+  background-image: gradient(120deg, #19191d 0%, #22232b 70%, #2b2d38 100%);
+  -webkit-box-shadow: 4px 0px 7px 8px #ffc60040;
+          box-shadow: 4px 0px 7px 8px #ffc60040;
+  background-color: #fec708;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.experts .expert-box .experts-content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+}
+
+.friends {
+  text-align: center;
+}
+
+.friends img {
+  max-width: 200px;
+  margin-bottom: 2em;
+}
+
+footer {
+  background-color: #004260;
+  padding: 2em 0;
+}
+
+footer .col-sm-10 h2, footer h3 {
+  color: #fff;
+}
+
+footer ul li a {
+  color: #fff;
+  padding: 10px 0;
+  display: block;
+}
+
+footer ul li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social {
+  text-align: center;
+}
+
+.social a {
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-right: 10px;
+  display: inline-block;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.social a:hover i {
+  color: #fff;
+}
+
+.social a.btn1:hover {
+  background: #ea700c;
+}
+
+.story #circle-1 {
+  border-radius: 50%;
+  background: #FEC708;
+}
+
+.story #circle-2 {
+  border-radius: 50%;
+  background: transparent;
+  border: 1.2rem solid #FEC708;
+}
+
+.experts h3.heading {
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */
