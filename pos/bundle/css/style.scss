@@ -1,0 +1,433 @@
+@import "_bootstrap.scss";
+@import "_swiper.scss";
+
+$primary: #26176b;
+$text: #6e6e6e;
+$green: #17856f;
+@font-face { font-family: 'Mark Pro Regular'; font-style: normal; font-weight: normal; src: local('Mark Pro Regular'), url('../fonts/MARKPRO.woff') format('woff'); }
+@font-face { font-family: 'Mark Pro Extra Light'; font-style: normal; font-weight: normal; src: local('Mark Pro Extra Light'), url('../fonts/MARKPROEXTRALIGHT.woff') format('woff'); }
+@font-face { font-family: 'Mark Pro Light'; font-style: normal; font-weight: normal; src: local('Mark Pro Light'), url('../fonts/MARKPROLIGHT.woff') format('woff'); }
+@font-face { font-family: 'Mark Pro Book'; font-style: normal; font-weight: normal; src: local('Mark Pro Book'), url('../fonts/MARKPROBOOK.woff') format('woff'); }
+@font-face { font-family: 'Mark Pro Medium'; font-style: normal; font-weight: normal; src: local('Mark Pro Medium'), url('../fonts/MARKPROMEDIUM.woff') format('woff'); }
+@font-face { font-family: 'Mark Pro Bold'; font-style: normal; font-weight: normal; src: local('Mark Pro Bold'), url('../fonts/MARKPROBOLD.woff') format('woff'); }
+@font-face { font-family: 'Mark Pro Heavy'; font-style: normal; font-weight: normal; src: local('Mark Pro Heavy'), url('../fonts/MARKPROHEAVY.woff') format('woff'); }
+@font-face { font-family: 'Mark Pro Black'; font-style: normal; font-weight: normal; src: local('Mark Pro Black'), url('../fonts/MARKPROBLACK.woff') format('woff'); }
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;height:100%}
+body{
+    font-family: 'Mark Pro Regular'
+}
+p{
+    color: $text;
+}
+.heading{
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    font-family: Mark,sans-serif;
+    color: #9b9999;
+    font-size: 11px;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.divider{
+    width: 30px;
+    height: 4px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 8px;
+    background-color: #683caf33;
+}
+.bigHeading {
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+    font-family: Albra,sans-serif;
+    color: #0b1d5f;
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 600;
+    text-align: center;
+}
+.topRow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(90deg,#683caf,#3d54ba 44%,#0075c9 81%);
+    padding: 1.5em;
+    h1, p{
+        margin: 0;
+        color: #fff;
+        margin-right: 2em;
+        font-size: 20px;
+    }
+    a{
+        border-radius: 8px;
+        background-color: #fff;
+        color: #0075c9;
+        font-size: 16px;
+        line-height: 12px;
+        font-weight: 700;
+        padding: 9px 15px;
+    }
+}
+.nav-link { 
+    color: $primary;
+    font-size: 15px;
+    font-weight: 600;
+}
+.specialdd{
+    padding: 20px;
+    left: -100px;
+    min-width: 400px;
+    ul{
+        li{
+            margin-bottom: 20px;
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                img{
+                    padding: 0 2em 1em 2em; 
+                    width: 90px;
+                }
+                div{
+                    h3{
+                        color: $primary;
+                        margin: 0;
+                        font-size: 16px;
+                        margin-bottom: 5px;
+                    }
+                    p{
+                        color: $text;
+                        margin: 0;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .pointer {
+        position: absolute;
+        left: 0;
+        top: -8px;
+        right: 4%;
+        bottom: auto;
+        z-index: 20;
+        width: 20px;
+        height: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 2px;
+        background-color: #fff;
+        transform: rotate(45deg);
+    }
+}
+.straightdd{
+    left: -50px;
+    min-width: 200px;
+    ul{
+        li{
+            a{
+                text-align: center;
+                display: block;
+                color: $text;
+            }
+        }
+    }
+    span{
+        margin-left: 10px;
+        background: red;
+        padding: 5px 10px;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 13px;
+        line-height: 1em;
+    }
+}
+.banner{
+    .container{
+        padding: 3em 2em;
+        position: relative;
+        background-color: #8fe2b41a;
+        border-radius: 20px;
+        .text{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            max-width: 700px;
+            left: 2em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            z-index: 100;
+            h2{
+                color: $primary;
+                font-size: 90px;
+                line-height: 110px;
+                margin: 0;
+                margin-bottom: 15px;
+            }
+        }
+        .swiper-slide{
+            a{
+                div.card{
+                    text-align: right;
+                    .card-img{
+                        max-height: 600px;
+                        width: auto;
+                    }
+                    .bgImg{
+                        max-width: 500px;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        opacity: 0.4;
+                        z-index: -1;
+                    }
+                    .card-body{
+                        display: flex;
+                        align-items: center;
+                        background: #fff;
+                        padding: 10px;
+                        border-radius: 5px;
+                        width: fit-content;
+                        position: absolute;
+                        bottom: 10%;
+                        right: 10%;
+                        // max-width: 380px;
+                        box-shadow: 0 10px 20px 0 #0000001a;
+                        img{
+                            max-width: 40px;
+                        }
+                        h3{
+                            color: $text;
+                        }
+                        >div{
+                            text-align: left;
+                            padding: 0 1.5em;
+                            small{
+                                color: $text;
+                            }
+                            p{
+                                margin: 0;
+                                line-height: 1.5em;
+                                font-size: 13px;
+                                font-family: 'Mark Pro Regular';
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.appStore{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1em;
+    img{
+        max-width: 150px;
+        padding-right: 10px;
+    }
+}
+.how{
+    .container{
+        position: relative;
+        z-index: 999;
+        max-height: 680px;
+        max-width: 1080px;
+        margin: -70px auto 120px;
+        padding-top: 30px;
+        padding-bottom: 70px;
+        border-radius: 16px;
+        background-color: #fff;
+        box-shadow: 0 10px 20px 10px #0000001a;
+        .row{
+            max-width: 80%;
+            margin: 0 auto;
+        }
+    }
+}
+.why{
+    .col-sm-3{
+        text-align: center;
+        img{
+            max-width: 200px;
+        }
+    }
+}
+.brandStyle{
+    color: $primary;
+    font-weight: 600;
+    text-align: center;
+    max-width: 600px;
+    font-family: Mark,sans-serif;
+    margin: 1em auto;
+    line-height: 1.5em;
+}
+.safe{
+    margin: 4em 0;
+    background: $green;
+    padding: 4em 0;
+    .heading, .bigHeading{
+        color: #fff;
+    }
+    .divider{
+        background: #ffffff80;
+    }
+    ul{
+        padding: 2em;
+        max-width: 1280px;
+        margin: 1em auto;
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            margin-bottom: 3.5em;
+            img{
+                max-width: 150px;
+                margin-right: 2em;
+            }
+            div{
+                h3, p{
+                    color: #fff;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+.smart{
+    .row{
+        padding: 3em 0;
+        .swiper-slide {
+            position: relative;
+            box-shadow: 0 10px 20px 0 #0000001a;
+            img{
+                // max-width: 1200px;
+            }
+            >div{
+                position: absolute;
+                top: 50%;
+                left: 2em;
+                h3{
+                    color: #fff;
+                    max-width: 600px;
+                    min-height: 25px;
+                    margin-bottom: 10px;
+                    font-family: 'Mark Pro Heavy';
+                    color: #fff;
+                    font-size: 58px;
+                    font-weight: 600;
+                }
+                p{
+                    max-width: 340px;
+                    min-height: 10px;
+                    font-family: 'Mark Pro Regular';
+                    color: #fff;
+                    font-size: 15px;
+                    line-height: 22px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+.why, .how, .safe, .smart{
+    .row{
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+}
+.ready{
+    display: block;
+    margin: 0;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    background-color: #f9f9f9;
+    h3{
+        font-size: 36px;
+        font-weight: 600;
+        color: $primary;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 400;
+        color: $primary;
+        max-width: 750px;
+        margin: 1em auto 2em auto;
+    }
+    .appStore{
+        justify-content: center;
+    }
+}
+footer{
+    background: $primary;
+    padding: 50px 150px;
+    .footer-container{
+        max-width: 1280px;
+        margin: 1em auto;
+        .top{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            >img{
+                max-width: 120px;
+            }
+            .social{
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                a{
+                    opacity: .4;
+                    &:hover{
+                        opacity: 1;
+                    }
+                    img{
+                        margin-right: 10px;
+                        max-width: 20px;
+                    }
+                }
+            }
+        }
+        .links{
+            display: flex;
+            margin: 2em 0;
+            ul{
+                margin-right: 1em;
+                li{
+                    margin: 0;
+                    line-height: 1.5em;
+                    a{
+                        color: #fff;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        .copy{
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content: start; 
+                li{
+                    color: #fff;
+                    margin-right: 1em;
+                    font-size: 12px;
+                    opacity: 0.5;
+                    a{
+                        color: #fff;
+                    }
+                }
+                li.link{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
