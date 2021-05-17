@@ -60,7 +60,7 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
-            </div>
+        </div>
             <div class="text">
                 <h2>It all adds up.</h2>
                 <p>Dosh gets you automatic cash back at thousands of places when you shop, dine, or book hotels. No coupons or receipt scanning. Simply download the app or find us in your favorite ways to pay, like Venmo or Jelli. It’s awesome.</p>
