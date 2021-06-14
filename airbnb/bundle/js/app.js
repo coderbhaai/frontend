@@ -4,10 +4,10 @@ $(document).ready(function(){
       spaceBetween: 10,
       pagination: { el: '.swiper-pagination', clickable: true },
       navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev', clickable: true },
-      effect: 'fade',
-      fadeEffect: { crossFade: true },
+      // effect: 'fade',
+      // fadeEffect: { crossFade: true },
       loop: true,
-      // autoplay: { delay: 2500 },
+      autoplay: { delay: 2500 },
       // on: {
       //   slideChangeTransitionEnd: function () {
       //     var bg = $('.swiper-slide-active').attr('data-bg')
@@ -21,7 +21,7 @@ $(document).ready(function(){
     // pagination: { el: '.swiper-pagination', clickable: true },
     navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev', clickable: true },
     loop: true,
-    // autoplay: { delay: 2500 },
+    autoplay: { delay: 2500 },
     breakpoints: {
       640: { slidesPerView: 2, spaceBetween: 10, },
       768: { slidesPerView: 3, spaceBetween: 10, },
